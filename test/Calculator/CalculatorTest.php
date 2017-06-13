@@ -25,7 +25,7 @@ class CalculatorTest extends TestCase
     {
         $file = file(__DIR__.'/sum_test_cases.csv');
         $dataSet = array_map(function($input){
-            return array_map('intval', explode(";", $input));
+            return array_map('floatval', explode(";", $input));
         }, $file);
         return $dataSet;
     }
