@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+<form name="calculator">
+  <table class="pipe">
+    <tr>
+      <td>
+        <input type="text" name="display" class="display" id="suma" disabled>
+      </td>
+      <td>
+        <input type="button" class="operator" name="plus" id="sum" value="+" onclick="changeDisplay()">
+      </td>
+      <td>
+        <input type="text" name="display" class="display" id="sumb" disabled>
+      </td>
+      <td>
+        <input type="button" name="doit" value="=" onclick="doTheMath()">
+      </td>
+      <td>
+        <input type="text" name="display" class="display" id="result" disabled>
+      </td>
+    </tr>
+    <tr>
+      <table class="pad">
+        <tr>
+          <td><input type="button" name="one" value="1" onclick="writeValue('1')"></td>
+          <td><input type="button" name="two" value="2" onclick="writeValue('2')"></td>
+          <td><input type="button" name="three" value="3" onclick="writeValue('3')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="four" value="4" onclick="writeValue('4')"></td>
+          <td><input type="button" name="five" value="5" onclick="writeValue('5')"></td>
+          <td><input type="button" name="six" value="6" onclick="writeValue('6')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="seven" value="7" onclick="writeValue('7')"></td>
+          <td><input type="button" name="eight" value="8" onclick="writeValue('8')"></td>
+          <td><input type="button" name="nine" value="9" onclick="writeValue('9')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="clear" name="clear" value="c" onclick="clearDisplay()"></td>
+          <td><input type="button" name="zero" value="0" onclick="writeValue('0')"></td>
+          <td><input type="button" name="comma" value="." onclick="writeValue('.')"></td>
+        </tr>
+
+      </table>
+    </tr>
+
+  </table>
+</form>
+<script src="calculator.js"></script>
+</body>
+</html>
