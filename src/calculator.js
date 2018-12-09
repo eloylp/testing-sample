@@ -1,6 +1,6 @@
 function sum (sumA, sumB) {
 
-  return sumA + sumB
+  return parseFloat(sumA) + parseFloat(sumB)
 
 }
 
