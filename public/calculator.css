@@ -111,6 +111,22 @@ input:active {
     box-shadow: none;
 }
 
+
+.signed-val {
+    background-color: #eae79e;
+    position: relative;
+}
+
+.signed-val:hover {
+    background-color: #eae79e;
+    box-shadow: 0 4px #d2ce8e;
+}
+
+.signed-val:active {
+    top: 4px;
+    box-shadow: none;
+}
+
 #clear {
     float: left;
     position: relative;
