@@ -4,6 +4,7 @@
   "description": "A project for explaining unit testing to everyone.",
   "main": "index.js",
   "scripts": {
+    "start": "./index.js",
     "test": "jest"
   },
   "repository": {
